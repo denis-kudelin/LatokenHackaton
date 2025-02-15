@@ -70,7 +70,8 @@ Within a maximum of 2000 characters, provide clear insights aligned with the use
 analysis, price predictions, market sentiment, or other crypto-related inquiries, explain how and why market movements
 may have occurred (e.g., news influence, shifts in trading volume). If a forecast is requested, outline potential trends
 and risks based on the information given, highlighting the key factors that could influence price behavior. Make your
-analysis concise, yet thorough.
+analysis concise, yet thorough. If the user requests price changes or any numerical output, present the data in a table format where each entry contains
+the date/time and the corresponding price on a new line, using the collected reference data.
 ", analysisData, userQuery);
         }
 
