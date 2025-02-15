@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LangVersion>latestmajor</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>latestmajor</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DenisKudelin.Config" Version="1.0.0" />
+    <PackageReference Include="NewsAPI" Version="0.7.0" />
+    <PackageReference Include="Gnews" Version="1.0.2" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.72" />
+    <PackageReference Include="2captcha-csharp" Version="1.4.0" />
+    <PackageReference Include="RestSharp" Version="112.1.0" />
+    <PackageReference Include="AngleSharp" Version="1.2.0" />
+    <PackageReference Include="Jint" Version="4.1.0" />
+    <PackageReference Include="Esprima" Version="3.0.5" />
+    <PackageReference Include="zlib.net" Version="1.0.4" />
+    <PackageReference Include="Ionic.Zlib" Version="1.9.1.5" />
+    <PackageReference Include="ZstdSharp.Port" Version="0.8.4" />
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.10" />
+    <PackageReference Include="Nito.AsyncEx" Version="5.1.2" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.1" />
+    <PackageReference Include="OpenAI" Version="2.1.0" />
+    <PackageReference Include="Bybit.Net" Version="4.1.0" />
+    <PackageReference Include="System.Linq.Async" Version="6.0.1" />
+    <PackageReference Include="Telegram.Bot" Version="22.4.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Api\" />
+    <None Remove="Api\News\" />
+    <None Remove="Api\Captcha\" />
+    <None Remove="Api\News\CryptoPanic\" />
+    <None Remove="Common\" />
+    <None Remove="Api\OpenAI\" />
+    <None Remove="Analysis\" />
+    <None Remove="Api\CryptoMarketData\" />
+    <None Remove="ASL\" />
+    <None Remove="Telegram\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Api\" />
+    <Folder Include="Api\News\" />
+    <Folder Include="Api\Captcha\" />
+    <Folder Include="Api\News\CryptoPanic\" />
+    <Folder Include="Common\" />
+    <Folder Include="Api\OpenAI\" />
+    <Folder Include="Analysis\" />
+    <Folder Include="Api\CryptoMarketData\" />
+    <Folder Include="ASL\" />
+    <Folder Include="Telegram\" />
+  </ItemGroup>
+</Project>
